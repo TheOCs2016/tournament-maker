@@ -518,7 +518,7 @@
                         </div>
 
                         <form onSubmit={handleAddTeams} className="flex gap-3 mb-6">
-                            <input type="text" value={inputTeam} onChange={(e) => setInputTeam(e.target.value)} placeholder="Type team names separated by comma (e.g. Brazil, Argentina)..." className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 font-bold text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
+                            <input type="text" value={inputTeam} onChange={(e) => setInputTeam(e.target.value)} placeholder="Add teams" className="flex-1 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 font-bold text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
                             <button type="submit" className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-xl font-black shadow-sm transition">Add</button>
                         </form>
                         
@@ -660,7 +660,7 @@
             return (
                 <div className="max-w-5xl mx-auto flex flex-col items-center py-4 sm:py-8 w-full">
                     <div className="w-full flex justify-between items-center mb-6">
-                        <h2 className="text-2xl font-black text-gray-900 tracking-tight">Official Draw</h2>
+                        <h2 className="text-2xl font-black text-gray-900 tracking-tight">Draw</h2>
                         <div className="flex gap-2">
                             <button onClick={handleRedraw} className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2.5 rounded-xl font-black text-xs transition shadow-sm flex items-center gap-1.5"><Icon name="refresh-cw" className="w-4 h-4"/> Redraw</button>
                             {drawComplete && (
